@@ -23,10 +23,9 @@ Amid the ongoing COVID-19 pandemic, there are no efficient face mask detection a
 ## :warning: TechStack/framework used
 
 - [OpenCV](https://opencv.org/)
-- [Caffe-based face detector](https://caffe.berkeleyvision.org/)
+- [haarcascade_frontalface_default](https://github.com/kipr/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)
 - [Keras](https://keras.io/)
 - [TensorFlow](https://www.tensorflow.org/)
-- [MobileNetV2](https://arxiv.org/abs/1801.04381)
 
 ## :star: Features
 Our face mask detector doesn't use any morphed masked images dataset and the model is accurate. Owing to the use of MobileNetV2 architecture, it is computationally efficient, thus making it easier to deploy the model to embedded systems (Raspberry Pi, Google Coral, etc.).
