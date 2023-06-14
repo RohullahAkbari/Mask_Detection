@@ -6,7 +6,7 @@ import numpy as np
 
 # set class names 
 
-class_names = ['incorrect_mask', 'with_mask', 'without_mask']
+class_names = ['Incorrect_mask', 'With_mask', 'Without_mask']
 
 # Reload the model 
 
