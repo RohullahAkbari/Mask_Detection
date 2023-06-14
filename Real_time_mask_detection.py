@@ -3,9 +3,6 @@
 import cv2
 import tensorflow as tf
 import numpy as np
-import sys
-from sklearn.metrics import confusion_matrix
-import seaborn as sns
 
 # set class names 
 
