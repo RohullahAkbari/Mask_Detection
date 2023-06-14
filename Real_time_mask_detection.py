@@ -21,7 +21,6 @@ video = cv2.VideoCapture(0)
 faceDetect = cv2.CascadeClassifier('raw.githubusercontent.com_opencv_opencv_master_data_haarcascades_haarcascade_frontalface_default.xml')
 
 
-
 while True:
     ret, frame = video.read() # read the (frame) of video and see that it right or no (ret)
 
@@ -45,11 +44,19 @@ while True:
 
         print(label)
 
+        # set color based on predicted label
+        if label == 0:
+            color = (0, 255, 255)  # red for Incorrect_mask
+        elif label == 1:
+            color = (0, 255, 0)  # green for With_mask
+        else:
+            color = (0, 0, 255)  # yellow for Without_mask
+
 
         # drowing the rectangles around the object
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 1)
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (50, 50, 255), 2)
-        cv2.rectangle(frame, (x, y - 40), (x + w, y), (50, 50, 255), -1)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), color, 1)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
+        cv2.rectangle(frame, (x, y - 40), (x + w, y), color, -1)
 
         # display the predicted emotion as text
         cv2.putText(frame, class_names[label], (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
