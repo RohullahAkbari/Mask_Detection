@@ -59,7 +59,8 @@ while True:
         cv2.rectangle(frame, (x, y - 40), (x + w, y), color, -1)
 
         # display the predicted emotion as text
-        cv2.putText(frame, class_names[label], (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
+        font = cv2.FONT_HERSHEY_TRIPLEX
+        cv2.putText(frame, class_names[label], (x, y - 10), font, 0.8, (255, 255, 255), 2)
     
 
     # displays the original color image with the bounding boxes and predicted emotion text
