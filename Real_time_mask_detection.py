@@ -4,10 +4,13 @@ import cv2
 import tensorflow as tf
 import numpy as np
 import sys
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
 
 class_names = ['incorrect_mask', 'with_mask', 'without_mask']
 
-model = tf.keras.models.load_model('./model-14.hdf5')
+model = tf.keras.models.load_model('./model-32.hdf5')
+
 
 video = cv2.VideoCapture(0)
 
