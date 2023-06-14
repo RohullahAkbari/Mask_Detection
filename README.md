@@ -101,12 +101,12 @@ $ streamlit run app.py
 ## Images
 
 <p align="center">
-  <img src="Readme_images/1.PNG">
+  <img src="Image/1.PNG">
 </p>
 <p align="center">Upload Images</p>
 
 <p align="center">
-  <img src="Readme_images/2.PNG">
+  <img src="Image/2.PNG">
 </p>
 <p align="center">Results</p>
 
