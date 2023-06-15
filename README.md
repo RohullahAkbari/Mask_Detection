@@ -81,6 +81,8 @@ $ python Real_time_mask_detection.py
 
 ## :key: Results
 
+
+
 #### Our model gave 98% accuracy for Face Mask Detection after training via <code>tensorflow-gpu==2.5.0</code>
 
 <a href="https://colab.research.google.com/drive/1AZ0W2QAHnM3rcj0qbTmc7c3fAMPCowQ1?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -101,12 +103,12 @@ $ streamlit run app.py
 ## Images
 
 <p align="center">
-  <img src="Image/1.PNG">
+  <img src="Media/1.PNG">
 </p>
 <p align="center">Upload Images</p>
 
 <p align="center">
-  <img src="Image/2.PNG">
+  <img src="Media/2.PNG">
 </p>
 <p align="center">Results</p>
 
