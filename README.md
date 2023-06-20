@@ -113,4 +113,4 @@ $ streamlit run app.py
 <p align="center">Results</p>
 
 ## :clap: And it's done!
-<p><a>hasib.aman7@gmail.com</a></p>
+<p><a>rohullah.akbari721@gmail.com</a></p>
